@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <header id="main-header">
+            <a id="logo-header" href="#">
+                  
+                   <span class="site-name"><img src="/img/euro-a-dolar.png" width="22px" height="22px">Transfer-Coin</span>
+                   <span class="site-desc"><p></p>Conversiones / Cambios / Soluciones</span>
+                   
+              </a> <!-- / #logo-header -->
+            
+         <nav>
+              <ul>
+                   <li><a href="#">Inicio</a></li>
+                   <a href="Combo-box.component.html">Regresar</a>              
+                   
+              </ul>
+         </nav><!-- / nav -->
+    </header><!-- / #main-header -->
+
+    <meta charset="UTF-8">
+    <title>Convertidro de divisas</title>
+    </head>
+    
+        <link rel="stylesheet" href="css/hello.css"/>
+
+    <body>
+        <form name="convertidor">
+            <h2>Convertidor <br> De Cordoba</h2>
+            <br><img src="img/ncr.png"></br>
+            <br> Ingresa La Cantidad De Divisa : <input type="text" name="pesos">
+            <hr>
+            <br>Tienes Esta Divisa : <input type="text" name="dolar">
+            <br>
+            <div id="botones">
+            <br><input type="button"  style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="MXN-Peso Mexicano" onclick="calcular();">
+            
+            <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="EUR-Europa" onclick="calcular2();">
+            <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="GTQ-Quetzal Guatemalteco" onclick="calcular3();">
+            <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="HNL-Lempira Hondureño" onclick="calcular4();">
+            <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="CRC-Colon Costarricense" onclick="calcular5();">
+            <br><input type="button"style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);"  value="USD-Dolar Estado Unidense" onclick="calcular6();">
+             <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="ARS-Peso Argentino " onclick="calcular7();">
+             <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="BRL-Real Brasileño" onclick="calcular8();">
+             <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="PEN-Sol Peruano" onclick="calcular9();">
+             <br><input type="button" style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);" value="COP-Peso Colombiano" onclick="calcular10();">
+             <br><input type="button"  style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);"value="UYU-Peso Uruguayo" onclick="calcular11();">
+             <br><input type="button"style="padding-left: 16px; padding-top: 8px; font-size: 25px; background-color: rgb(21, 235, 235); color:rgb(87, 17, 119);"  value="CPL-Peso Chileno" onclick="calcular12();">
+        </form>
+    </div>
+        <script type="text/javascript">
+        function calcular(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes * 0.59;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular2(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes * 0.024;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular3(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 0.22;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular4(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 0.70;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular5(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 17.55;
+            document.convertidor.dolar.value = total;
+            }
+           }
+           function calcular6(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 0.028;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+         function calcular7(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 2.27;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular8(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 0.15;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular9(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 0.10;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+         function calcular10(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 106.89;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        function calcular11(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 1.21;         
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+         function calcular12(){
+            var pes = (document.convertidor.pesos.value)*1;
+
+            if (pes == 0){alert("No ha completado el espacio de pesos. Ingrese un numero")}else{
+            
+            var total = pes* 21.58;
+            document.convertidor.dolar.value = total;
+            }
+
+        }
+        
+
+        </script>
+
+        
+    </body>
+</html>
